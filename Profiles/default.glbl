@@ -7,6 +7,6 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
-      <name>Code</name>
+      <name>CountryCode</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

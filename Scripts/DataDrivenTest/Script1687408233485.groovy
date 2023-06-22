@@ -17,7 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('CountryinfoSOAPService/GetCapital', [('CountryISOCode') : GlobalVariable.Code, ('CountryCode') : 'VN']))
+println("... value of country code is : "+CountryCode)
 
-WS.sendRequest(findTestObject('CountryinfoSOAPService/GetCurrency'))
+println("... value of capital is : "+Capital)
+
+println("... Value of currency is : "+Currency1)
+
+response1 = WS.sendRequest(findTestObject('CountryinfoSOAPService/GetCapital', [('CountryCode') : CountryCode]))
+
+WS.verifyElementText(response1, 'CapitalCityResponse.CapitalCityResult', Capital)
+
+response3 = WS.sendRequest(findTestObject('CountryinfoSOAPService/GetCurrency', [('CountryCode') : CountryCode]))
+
+WS.verifyElementText(response3, 'CountryCurrencyResponse.CountryCurrencyResult.sName', Currency1)
 

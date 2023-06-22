@@ -35,13 +35,13 @@
       <description></description>
       <id>9b5db55a-801a-4851-a429-6fd895b47364</id>
       <masked>false</masked>
-      <name>GetCapital</name>
+      <name>Capital</name>
    </variable>
    <variable>
       <defaultValue>'Rupiahs'</defaultValue>
       <description></description>
       <id>ccaf44ac-98ad-40a4-9598-ba8260b3635f</id>
       <masked>false</masked>
-      <name>Currency</name>
+      <name>Currency1</name>
    </variable>
 </TestCaseEntity>

@@ -46,7 +46,7 @@
       <name>CountryISOCode</name>
    </variables>
    <variables>
-      <defaultValue>'VN'</defaultValue>
+      <defaultValue>'ID'</defaultValue>
       <description></description>
       <id>1731bf52-5ad5-4cba-b53d-2b6fc1795f84</id>
       <masked>false</masked>
@@ -64,6 +64,8 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyElementText(response, 'CapitalCityResponse.CapitalCityResult', 'Hanoi')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

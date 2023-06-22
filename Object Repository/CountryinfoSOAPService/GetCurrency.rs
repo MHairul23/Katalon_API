@@ -36,7 +36,7 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;web:CountryCurrency>
-         &lt;web:sCountryISOCode>${CountryCode}&lt;/web:sCountryISOCode>
+         &lt;web:sCountryISOCode>IN&lt;/web:sCountryISOCode>
       &lt;/web:CountryCurrency>
    &lt;/soapenv:Body>
 &lt;/soapenv:Envelope></soapBody>
@@ -81,8 +81,11 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sName', 'Dollars')
 
-</verificationScript>
+WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sName', 'Rupiahs')
+
+WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sName', 'Dong')
+
+WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sName', 'Rupees')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

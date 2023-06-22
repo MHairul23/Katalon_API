@@ -25,9 +25,9 @@ def dataValue = new XmlSlurper().parseText(xml1)
 
 def countryCode = dataValue.ListOfCountryNamesByNameResult.tCountryCodeAndName[2].sISOCode.text()
 
-GlobalVariable.Code = countryCode
+GlobalVariable.CountryCode = countryCode
 
-println (".... value for Global Variable is: "+GlobalVariable.Code)
+println (".... value for Global Variable is: "+GlobalVariable.CountryCode)
 
 WS.sendRequest(findTestObject('CountryinfoSOAPService/GetCapital'))
 
