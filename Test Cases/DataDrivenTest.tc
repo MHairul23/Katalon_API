@@ -5,4 +5,43 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ef407253-953b-4073-9a8e-7188ec95e6fe</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e3fffbb9-f202-4abe-87b4-8251e6037fb3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9b5db55a-801a-4851-a429-6fd895b47364</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ccaf44ac-98ad-40a4-9598-ba8260b3635f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ID'</defaultValue>
+      <description></description>
+      <id>e3fffbb9-f202-4abe-87b4-8251e6037fb3</id>
+      <masked>false</masked>
+      <name>CountryCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Jakarta'</defaultValue>
+      <description></description>
+      <id>9b5db55a-801a-4851-a429-6fd895b47364</id>
+      <masked>false</masked>
+      <name>GetCapital</name>
+   </variable>
+   <variable>
+      <defaultValue>'Rupiahs'</defaultValue>
+      <description></description>
+      <id>ccaf44ac-98ad-40a4-9598-ba8260b3635f</id>
+      <masked>false</masked>
+      <name>Currency</name>
+   </variable>
 </TestCaseEntity>
